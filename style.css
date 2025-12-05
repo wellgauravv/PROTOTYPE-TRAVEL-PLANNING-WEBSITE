@@ -6,11 +6,12 @@
 
 :root {
     /* Light Theme Variables */
-    --color-primary: #3498db; /* Blue */
-    --color-primary-dark: #2980b9;
+    --color-primary: #006aff; /* Blue */
+    --color-primary: #006aff; /* Blue */
+    --color-primary-dark:#2b43c;
     --color-text-dark: #2c3e50;
-    --color-text-light: #f4f4f4;
-    --color-bg: #f0f2f5; /* Very Light Gray/Blue */
+    --color-text-light: #ffffff;
+    --color-bg: #ffffff; /* Very Light Gray/Blue */
     --color-card-bg: #ffffff;
     --color-shadow-light: rgba(255, 255, 255, 0.7);
     --color-shadow-dark: rgba(174, 174, 192, 0.4);
@@ -141,13 +142,14 @@ nav a.active {
 }
 
 .btn-primary {
-    background-color: var(--color-primary);
-    color: var(--color-text-light);
+    background-color: var(--color-card-bg);
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
     box-shadow: 4px 4px 8px var(--color-shadow-dark), -4px -4px 8px var(--color-shadow-light);
 }
 
 .btn-primary:hover {
-   background-color: var(--color-primary);
+    background-color: var(--color-primary);
     color: var(--color-text-light);
     transform: translateY(-2px);
     box-shadow: 6px 6px 12px var(--color-shadow-dark), -6px -6px 12px var(--color-shadow-light);
@@ -174,7 +176,7 @@ nav a.active {
 */
 
 .hero {
-    background: var(--color-bg);
+    background:#0274ff;
     color: var(--color-text-dark);
     padding: 80px 5%;
     text-align: center;
@@ -184,12 +186,14 @@ nav a.active {
     font-size: 3.5rem;
     margin-bottom: 15px;
     line-height: 1.2;
+    color: #ffffff;
 }
 
 .hero p {
     font-size: 1.25rem;
     margin-bottom: 30px;
     opacity: 0.8;
+    color: #ffffff;
 }
 
 .hero-buttons > * {
@@ -583,4 +587,3 @@ footer {
         padding: 20px;
     }
 }
-
